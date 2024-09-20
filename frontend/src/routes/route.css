@@ -1,0 +1,22 @@
+.peer:checked ~ .switch::after {
+  background-image: url('../assets/images/flag/france.png');
+}
+
+.switch::after {
+  content: '';
+  position: absolute;
+  /* top: 1px;
+  left: 1px; */
+  width: 24px; /* Adjust as needed */
+  height: 24px; /* Adjust as needed */
+  
+  background-image: url('../assets/images/flag/united-states.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .peer:checked ~ .switch::after {
+    transform: translateX(32px); /* Adjust based on your switch width */
+  }
